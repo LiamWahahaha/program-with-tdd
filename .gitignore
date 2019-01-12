@@ -1,0 +1,15 @@
+# Byte-comiled / optimized / DLL files
+__pycache__/
+
+# Distribution / packaging
+.Python
+downloads/
+
+# Unit test /coverage reports
+.coverage
+.coverage.*
+.cache
+.hypothesis/
+
+# Ipython Notebook
+.ipynb_checkpoints
