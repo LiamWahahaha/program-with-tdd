@@ -3,4 +3,4 @@ python:
     - "3.6"
     - "3.7-dev"
 script:
-    python -m unittest tests\test* -v
+    python -m unittest "tests\test*" -v
