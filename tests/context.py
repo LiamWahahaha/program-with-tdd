@@ -15,5 +15,7 @@ from source.leetcode.two_sum import two_sum as TwoSum
 # 96 medium
 from source.leetcode.unique_bst import unique_bst as UniqueBST
 
+# 950 medium
+from source.leetcode import array as Array
 # Concepts and Algorithms
 from source.concepts_and_algorithms import concepts_and_algorithms as Concepts
