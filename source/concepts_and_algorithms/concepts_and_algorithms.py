@@ -73,26 +73,25 @@ class Sort():
     common sorting algorithms
     """
 
-#    def bubble_sort(self, arr):
-#        len_of_arr = len(arr)
-#
-#        for idx_i in range(len_of_arr):
-#            for idx_j in range(idx_i + 1, len_of_arr):
-#                if arr[idx_i] > arr[idx_j]:
-#                    arr[idx_i], arr[idx_j] = arr[idx_j], arr[idx_i]
-#
-#        return arr
+    def bubble_sort(self, arr):
+        len_of_arr = len(arr)
 
-#    def selection_sort(self, arr):
-#        len_of_arr = len(arr)
-#
-#        for idx_i, num in enumerate(arr):
-#            minimum = idx_i
-#            for idx_j in range(idx_i + 1, len_of_arr):
-#                if arr[idx_j] < arr[idx_i]:
-#                    minimum = idx_j
-#
-#            arr[idx_i], arr[minimum] = arr[minimum], arr[idx_i]
-#
-#        return arr
+        for idx_i in range(len_of_arr):
+            for idx_j in range(len_of_arr - idx_i - 1):
+                if arr[idx_j] > arr[idx_j + 1]:
+                    arr[idx_j], arr[idx_j + 1] = arr[idx_j + 1], arr[idx_j]
+
+        return arr
+
+    def selection_sort(self, arr):
+        len_of_arr = len(arr)
+        for idx_i in range(len_of_arr):
+            min_idx = idx_i
+            for idx_j in range(idx_i + 1, len_of_arr):
+                if arr[idx_j] < arr[min_idx]:
+                    min_idx = idx_j
+
+            arr[idx_i], arr[min_idx] = arr[min_idx], arr[idx_i]
+
+        return arr
 
