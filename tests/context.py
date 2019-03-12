@@ -15,6 +15,8 @@ from source.leetcode.two_sum import two_sum as TwoSum
 # 96 medium
 from source.leetcode.unique_bst import unique_bst as UniqueBST
 
+# 127 medium
+from source.leetcode.word_ladder import word_ladder as WordLadder
 # 950 medium
 from source.leetcode import array as Array
 # Concepts and Algorithms

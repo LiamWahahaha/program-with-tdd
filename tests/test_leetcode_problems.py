@@ -13,6 +13,15 @@ class BasicTestSuite(unittest.TestCase):
         unique_bst = UniqueBST.Solution()
         self.assertEqual(unique_bst.numTrees(3), 5)
 
+    def test_word_ladder(self):
+        word_ladder =  WordLadder.Solution()
+        test_cases = [('hit', 'cog', ['hot', 'dot', 'dog', 'lot', 'log', 'cog'], 5),\
+                      ('hit', 'cog', ['hot', 'dot', 'dog', 'lot', 'log'], 0)]
+        for test_case in test_cases:
+            self.assertEqual(word_ladder.ladderLength(beginWord = test_case[0], \
+                                                      endWord = test_case[1],   \
+                                                      wordList = test_case[2]), \
+                            test_case[3])
 
 class BasicTestChecker(unittest.TestCase):
     def test_checker_deck_revealed_increasing(self):
